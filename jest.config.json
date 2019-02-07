@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": ["js", "ts", "json", "vue"],
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/$1"
+  },
+  "transform": {
+    ".*\\.(vue)$": "vue-jest",
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
+  "snapshotSerializers": ["jest-serializer-vue"],
+  "coverageDirectory": "<rootDir>/tests/unit/coverage",
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "<rootDir>/src/components/**/*.{js,ts,vue}",
+    "<rootDir>/src/layouts/**/*.{js,ts,vue}",
+    "<rootDir>/src/plugins/**/*.{js,ts,vue}",
+    "<rootDir>/src/pages/**/*.{js,ts,vue}",
+    "<rootDir>/src/store/**/*.{js,ts}",
+    "!**/node_modules/**"
+  ],
+  "testPathIgnorePatterns": ["<rootDir>/tests/e2e"]
+}

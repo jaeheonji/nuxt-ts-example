@@ -91,7 +91,15 @@ typings/
 
 # Nuxt build
 
- # Nuxt generate
+# Nuxt generate
 dist
+
+### Cypress ###
+
+# Screenshots directories
+videos
+
+# Videos directories
+screenshots
 
 # End of https://www.gitignore.io/api/node,nuxt

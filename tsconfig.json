@@ -6,11 +6,11 @@
       "~/*": ["src/*"],
       "@/*": ["src/@types/*"]
     },
-    "types": ["@types/node", "@nuxt/vue-app-edge"],
+    "types": ["@types/node", "@types/jest", "@nuxt/vue-app-edge"],
     "noImplicitAny": false,
     "experimentalDecorators": true,
     "allowJs": true
   },
-  "include": ["src/**/*.ts", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.vue", "tests/**/*.ts"],
   "exclude": ["node_modules"]
 }
