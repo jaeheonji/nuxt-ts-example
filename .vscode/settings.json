@@ -1,5 +1,12 @@
 {
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "tslint.autoFixOnSave": true
+  "tslint.autoFixOnSave": true,
+
+  // stylelint options
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "vetur.validation.style": false,
+  "stylelint.enable": true
 }

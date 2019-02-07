@@ -1,9 +1,16 @@
 {
   "extends": "@nuxt/typescript-edge",
   "compilerOptions": {
-    "baseUrl": "./src/",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["src/*"],
+      "@/*": ["src/@types/*"]
+    },
     "types": ["@types/node", "@nuxt/vue-app-edge"],
+    "noImplicitAny": false,
     "experimentalDecorators": true,
     "allowJs": true
-  }
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue"],
+  "exclude": ["node_modules"]
 }
