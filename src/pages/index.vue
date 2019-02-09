@@ -1,11 +1,19 @@
 <template>
-  <div class="typography">Nuxt</div>
+  <div>
+    <sample-button>Hello Nuxt</sample-button>
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
-@Component
+import SampleButton from '~/components/Sample/Sample.vue'
+
+@Component({
+  components: {
+    SampleButton,
+  },
+})
 export default class Index extends Vue {}
 </script>
 
